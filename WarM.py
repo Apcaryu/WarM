@@ -1,3 +1,5 @@
+# Author : LucasTriolet, Apcaryu
+
 import random
 import sys
 from typing import List, Union
