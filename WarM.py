@@ -3,6 +3,7 @@
 import random
 import sys
 from typing import List, Union
+import prinny
 
 weapons  = ["GreatSword","LongSword","Sword & Shield","Dual Blades",
 			"GreatHammer","HunterHorn","Lance","GunLance","SwitchBlade","ChargeBlade",
@@ -79,9 +80,11 @@ def get_rand_tier(spread : int = 1) -> int:
     
 def get_rand_monster(monsters : List[Monster], tier : int = 0) -> Union[Monster, None]:
     if (tier == 0) :
+        print_prinny()
         print("Dood ! This tier is so wrong dood !")
         return
     if monsters == [] :
+        print_prinny()
         print("I think the list is empty dood !")
         return
     nb_monsters = len(monsters)
@@ -112,11 +115,16 @@ def generation(monsters : List[Monster], nb_arg : int = len(sys.argv)) :
                 tier = get_rand_tier()
                 print(f"armor : {armor} | monster : {get_rand_monster(monsters, tier).name} | tier : {tier}")
         else :
+            print_prinny()
             print(f"wsh dood {sys.argv} are not good argument, use 'weapon' or 'armor' dood !")
             
     else :
+        print_prinny()
         print(f"Dood, I expected 2 or 3 argmuments but you gave me {nb_arg} dood !")
         return
+
+def print_prinny() :
+    print(prinny.prinny_full)
 
 def main() :
     global weapons
