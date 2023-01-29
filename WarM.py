@@ -6,7 +6,7 @@ from typing import List, Union
 import prinny
 
 weapons  = ["GreatSword","LongSword","Sword & Shield","Dual Blades",
-			"GreatHammer","HunterHorn","Lance","GunLance","SwitchBlade","ChargeBlade",
+			"GreatHammer","HunterHorn","Lance","GunLance","Switch Axe","ChargeBlade",
 			"InsectGlaive","Light BowGun","Heavy BowGun","Bow"]
 armors   = ["Head", "Mail", "Vambraces", "Coil", "Greaves"]
 
